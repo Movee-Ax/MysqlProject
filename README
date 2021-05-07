@@ -1,1 +1,32 @@
-目前存在bug：关于root的传递问题会导致删除或者编辑后没有root传入。
+在manage.py中有启动说明，数据库建立代码见table.sql，需要自己添加数据，
+由于密码采用sha1加密，注册权限默认为P，注册后请在数据库中更改自己的权限为TS，作为管理员用户
+本项目基于django框架，网页列表如下：
+urlpatterns = [
+    path('manager/', admin.site.urls),
+    path('index/', views.index),            # 展示总页面，可以去选择查看什么信息
+    path('register/', views.register),       # 注册
+    path('login/', views.login),            # 初始登录界面
+    path('logout/', views.logout),
+    path('create/', views.create),
+    path('show-worker/', worker.showWorker),
+    path('add-worker/', worker.addWorker),
+    path('edit-worker/', worker.editWorker),
+    path('delete-worker/', worker.deleteWorker),
+    path('show-shop/', shop.showShop),
+    path('add-shop/', shop.addShop),
+    path('edit-shop/', shop.editShop),
+    path('delete-shop/', shop.deleteShop),
+    path('show-firm/', firm.showFirm),
+    path('add-firm/', firm.addFirm),
+    path('edit-firm/', firm.editFirm),
+    path('delete-firm/', firm.deleteFirm),
+    path('show-pharmacist/', pharmacist.showPharmacist),
+    path('add-pharmacist/', pharmacist.addPharmacist),
+    path('edit-pharmacist/', pharmacist.editPharmacist),
+    path('delete-pharmacist/', pharmacist.deletePharmacist),
+    path('show-medicine/', medicine.showMedicine),
+    path('add-medicine/', medicine.addMedicine),
+    path('edit-medicine/', medicine.editMedicine),
+    path('delete-medicine/', medicine.deleteMedicine)
+]
+

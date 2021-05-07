@@ -1,6 +1,7 @@
 在manage.py中有启动说明，数据库建立代码见table.sql，需要自己添加数据，
 由于密码采用sha1加密，注册权限默认为P，注册后请在数据库中更改自己的权限为TS，作为管理员用户
 本项目基于django框架，网页列表如下：
+
 urlpatterns = [
     path('manager/', admin.site.urls),
     path('index/', views.index),            # 展示总页面，可以去选择查看什么信息

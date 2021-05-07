@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="{% static 'css/layui.css' %}" media="all" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/a.css' %}" media="all" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/login.css' %}" media="all" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<div style="display: none">
+    <span id="spanFirstt">第一页</span> <span id="spanPret">上一页</span> <span id="spanNextt">下一页</span> <span
+        id="spanLastt">最后一页</span> 第<span id="spanPageNumt"></span>页/共<span id="spanTotalPaget"></span>页
+</div>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">药品管理系统</div>
+        <ul class="layui-nav layui-bg-cyan">
+            {% if root == "TS"%}
+            <li class="layui-nav-item" style="float: right"><a href="/create">创建用户</a></li>
+            {% endif %}
+            <li class="layui-nav-item" style="float: right"><a href="/logout">退出登录</a>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-shop/?root={{ root }}">药店</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-worker/?root={{ root }}">药监局职工</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-firm/?root={{ root }}">药品生产厂商</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-pharmacist/?root={{ root }}">药师</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-medicine/?root={{ root }}">药品</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="layui-body">
+        <h1>编辑药师</h1>
+        <form action="/edit-pharmacist/?Phcode={{ current_pharmacist.Phcode }}" method="POST" class="layui-form" lay-filter="example">
+            <div class="layui-form-item">
+                <label class="layui-form-label">药师编号</label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Phcode" style="width:300px;"
+                           type="text" value="{{ current_pharmacist.Phcode }}">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">姓名</label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Phname" style="width:300px;"
+                           type="text" value="{{ current_pharmacist.Phname }}">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">性别 </label>
+                    <div class="layui-input-inline">
+                        <select class="layui-input-block" name="Phsex">
+                            {% if current_pharmacist.Phsex == "男" %}
+                            <option selected value="1">男</option>
+                            <option value="2">女</option>
+                            {% else %}
+                            <option value="1">男</option>
+                            <option selected value="2">女</option>
+                            {% endif %}
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">年龄</label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Phage" style="width:300px;"
+                           type="text" value="{{ current_pharmacist.Phage }}">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">职称</label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Phtitle"
+                           style="width:300px;" type="text" value="{{ current_pharmacist.Phtitle }}">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">雇佣的药店编号</label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shopcode"
+                           style="width:300px;" type="text" value="{{ current_pharmacist.Shopcode }}">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">联系电话</label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Phphone"
+                           style="width:300px;" type="text" value="{{ current_pharmacist.Phphone }}">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">是否继续注册 </label>
+                    <div class="layui-input-inline">
+                        <select class="layui-input-block" name="Phcor">
+                            {% if current_pharmacist.Phcor == "是" %}
+                            <option selected value="1">是</option>
+                            <option value="2">否</option>
+                            {% else %}
+                            <option value="1">是</option>
+                            <option selected value="2">否</option>
+                            {% endif %}
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p style="display:none"><input name="root2" type="text" value="{{ root }}"></p>
+            <input type="submit" value="提交" class="search">
+        </form>
+    </div>
+</div>
+<script src="{% static 'json/layui.js' %}"></script>
+<script>
+    layui.use('form', function () {
+        var form = layui.form;
+
+        //各种基于事件的操作，下面会有进一步介绍
+        form.render();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+.DownButtonNormal{//设计该类的所有格式
+    height: 18px;
+    line-height: 18px;
+    padding: 0 11px;
+    background: rgb(120, 127, 162);
+    border: 1px #E5E7EA solid;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 12px;
+    outline: none;
+ }

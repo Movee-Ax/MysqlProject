@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link href="{% static 'css/login.css' %}" media="all" rel="stylesheet" type="text/css">
+    <title>登录</title>
+</head>
+<body class="bg">
+<div id="bigBox">
+    <h1 style="color: #009688">药品管理系统</h1>
+    <h2 style="color: white">登录</h2>
+    <div class="inputBox">
+        <form action="/login/" method="POST">
+            <p style="color:red">{{ logout_succeed }}</p>
+            <div class="inputText">
+                <input name="username" placeholder="用户名" type="text">
+            </div>
+            <div class="inputText">
+                <p style="color:red">{{ not_user }}</p>
+                <input name="password" placeholder="密码" type="password">
+                <p style="color:red">{{ not_password }}</p>
+                <p style="color:red">{{ succeed }}</p>
+            </div>
+            <p><input class="inputButton" type="submit" value="登录"></p>
+            <a class="inputButton" href="/register/">注册</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>

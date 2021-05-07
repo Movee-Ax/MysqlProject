@@ -1,0 +1,180 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.box {
+    width: 400px;
+    height: 420px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    top: calc(50vh - 210px);
+    left: calc(50vw - 200px);
+}
+
+.el-icon-close {
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.el-icon-close:hover {
+    color: darkred;
+}
+
+.content {
+    position: absolute;
+    top: 40px;
+    width: 280px;
+    left: 60px;
+}
+
+.nav {
+    font-size: 20px;
+    height: 38px;
+    border-bottom: 2px solid darkgrey;
+}
+
+.nav > span {
+    margin: 0 20px 0 35px;
+    color: darkgrey;
+    user-select: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 2px solid darkgrey;
+}
+
+.nav > span.active {
+    color: black;
+    border-bottom: 3px solid black;
+    padding-bottom: 9px;
+}
+
+.el-input, .el-button {
+    margin-top: 40px;
+}
+
+.el-button {
+    width: 100%;
+    font-size: 18px;
+}
+
+.foot > span {
+    float: right;
+    margin-top: 20px;
+    color: orange;
+    cursor: pointer;
+}
+
+.sms {
+    color: orange;
+    cursor: pointer;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+#bigBox {
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ a{
+ text-decoration: none;
+ }
+input[type="submit"]{
+    cursor:pointer;
+}
+#bigBox h1 {
+    color: white;
+}
+
+#bigBox .inputBox {
+    margin-top: 50px;
+}
+
+#bigBox .inputBox .inputText {
+    margin-top: 20px;
+}
+
+#bigBox .inputBox .inputText span {
+    color: white;
+}
+
+#bigBox .inputBox .inputText input {
+    border: 0;
+    padding: 10px 10px;
+    border-bottom: 1px solid white;
+    background-color: #00000000;
+    color: white;
+}
+
+#bigBox .inputBox .inputButton {
+    border: 0;
+    width: 150px;
+    height: 25px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 20px;
+    /*background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);*/
+    background: #03a9f4;
+}
+
+
+/*.iconfont {*/
+/*    font-family: "iconfont" !important;*/
+/*    font-size: 16px;*/
+/*    font-style: normal;*/
+/*    -webkit-font-smoothing: antialiased;*/
+/*    -moz-osx-font-smoothing: grayscale;*/
+/*}*/
+
+.icon-user:before {
+    content: "\e623";
+}
+
+.icon-password:before {
+    content: "\e75b";
+}
+
+
+.bg{
+    background: url(image/login.jpg) no-repeat center 0;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+.search{
+    border: 0;
+    width: 50px;
+    height: 25px;
+    color: white;
+    margin-top: 0px;
+    margin-left: 200px;
+    border-radius: 20px;
+    /*background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);*/
+    background: #777777;
+}

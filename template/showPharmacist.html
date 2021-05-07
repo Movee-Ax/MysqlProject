@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="{% static 'css/layui.css' %}" media="all" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/a.css' %}" media="all" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/login.css' %}" media="all" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<div style="display: none">
+    <span id="spanFirstt">第一页</span> <span id="spanPret">上一页</span> <span id="spanNextt">下一页</span> <span
+        id="spanLastt">最后一页</span> 第<span id="spanPageNumt"></span>页/共<span id="spanTotalPaget"></span>页
+</div>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">药品管理系统</div>
+        <ul class="layui-nav layui-bg-cyan">
+            {% if root == "TS"%}
+            <li class="layui-nav-item" style="float: right"><a href="/create">创建用户</a></li>
+            {% endif %}
+            <li class="layui-nav-item" style="float: right"><a href="/logout">退出登录</a>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-shop/?root={{ root }}">药店</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-worker/?root={{ root }}">药监局职工</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-firm/?root={{ root }}">药品生产厂商</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-pharmacist/?root={{ root }}">药师</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-medicine/?root={{ root }}">药品</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="layui-body">
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+            <legend>药师</legend>
+        </fieldset>
+        <a class="layui-btn layui-btn-primary layui-border-green" href="/show-pharmacist/?root={{ root }}">返回所有列表</a>
+        {% if root == "TS" or root == "S" %}
+        <a class="layui-btn layui-btn-primary layui-border-green" href="/add-pharmacist/?root={{ root }}">添加</a>
+        {% endif %}
+        <form action="/show-pharmacist/" method="POST">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">请选择需要查询的信息 </label>
+                    <div class="layui-input-inline">
+                        <select class="layui-input-block" name="type">
+                            <option value="1">药师编号</option>
+                            <option value="2">姓名</option>
+                            <option value="3">职称</option>
+                            <option value="4">雇佣的药店编号</option>
+                            <option value="5">是否继续注册</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">请输入对应的查询值</label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="value" style="width:300px;" type="text">
+                </div>
+            </div>
+            <p style="display:none"><input name="root2" type="text" value="{{ root }}"></p>
+            <p><input class="search" type="submit" value="查询"></p>
+        </form>
+        <table class="layui-table" lay-skin="line">
+            <thead>
+            <tr>
+                <th>药师编号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>职称</th>
+                <th>雇佣的药店编号</th>
+                <th>联系电话</th>
+                <th>是否继续注册</th>
+            </tr>
+            </thead>
+            <tbody id="tablelsw">
+            {% for row in pharmacist_list %}
+            <tr>
+                <td>{{ row.Phcode }}</td>
+                <td>{{ row.Phname }}</td>
+                <td>{{ row.Phsex }}</td>
+                <td>{{ row.Phage }}</td>
+                <td>{{ row.Phtitle }}</td>
+                <td>{{ row.Shopcode }}</td>
+                <td>{{ row.Phphone }}</td>
+                <td>{{ row.Phcor }}</td>
+                {% if root == "TS" or root == "S" or root == "C" %}
+                <td class="layui-btn layui-btn-normal">
+                    <a href="/edit-pharmacist/?Phcode={{ row.Phcode }}&root={{ root }}">编辑</a>
+                </td>
+                {% endif %}
+                {% if root == "TS" %}
+                <td class="layui-btn layui-btn-danger">
+                    <a href="/delete-pharmacist/?Phcode={{ row.Phcode }}&root={{ root }}"
+                       onclick="return confirm('确定删除?');">删除</a>
+                </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <div class="layui-btn-group" style="margin-left: 600px">
+            <button class="layui-btn" id="spanFirst" type="button">
+                <i class="layui-icon">第一页</i>
+            </button>
+            <button class="layui-btn" id="spanPre" type="button">
+                <i class="layui-icon">上一页</i>
+            </button>
+            <button class="layui-btn" id="spanNext" type="button">
+                <i class="layui-icon">下一页</i>
+            </button>
+            <button class="layui-btn" id="spanLast" type="button">
+                <i class="layui-icon">最后一页</i>
+            </button>
+        </div>
+        第<span id="spanPageNum"></span>页/共<span id="spanTotalPage"></span>页
+        <!--    <script language="javascript" src="Paging.js"></script>-->
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    var theTable = document.getElementById("tablelsw");
+    var totalPage = document.getElementById("spanTotalPage");
+    var pageNum = document.getElementById("spanPageNum");
+
+    var spanPre = document.getElementById("spanPre");
+    var spanNext = document.getElementById("spanNext");
+    var spanFirst = document.getElementById("spanFirst");
+    var spanLast = document.getElementById("spanLast");
+
+    var totalPaget = document.getElementById("spanTotalPaget");
+    var pageNumt = document.getElementById("spanPageNumt");
+
+    var spanPret = document.getElementById("spanPret");
+    var spanNextt = document.getElementById("spanNextt");
+    var spanFirstt = document.getElementById("spanFirstt");
+    var spanLastt = document.getElementById("spanLastt");
+
+    var numberRowsInTable = theTable.rows.length;
+    var pageSize = 5;
+    var page = 1;
+
+    //下一页
+    function next() {
+
+        hideTable();
+
+        currentRow = pageSize * page;
+        maxRow = currentRow + pageSize;
+        if (maxRow > numberRowsInTable) maxRow = numberRowsInTable;
+        for (var i = currentRow; i < maxRow; i++) {
+            theTable.rows[i].style.display = '';
+        }
+        page++;
+
+        if (maxRow == numberRowsInTable) {
+            nextText();
+            lastText();
+        }
+        showPage();
+        preLink();
+        firstLink();
+    }
+
+    //上一页
+    function pre() {
+
+        hideTable();
+
+        page--;
+
+        currentRow = pageSize * page;
+        maxRow = currentRow - pageSize;
+        if (currentRow > numberRowsInTable) currentRow = numberRowsInTable;
+        for (var i = maxRow; i < currentRow; i++) {
+            theTable.rows[i].style.display = '';
+        }
+
+
+        if (maxRow == 0) {
+            preText();
+            firstText();
+        }
+        showPage();
+        nextLink();
+        lastLink();
+    }
+
+    //第一页
+    function first() {
+        hideTable();
+        page = 1;
+        for (var i = 0; i < pageSize; i++) {
+            theTable.rows[i].style.display = '';
+        }
+        showPage();
+
+        preText();
+        nextLink();
+        lastLink();
+    }
+
+    //最后一页
+    function last() {
+        hideTable();
+        page = pageCount();
+        currentRow = pageSize * (page - 1);
+        for (var i = currentRow; i < numberRowsInTable; i++) {
+            theTable.rows[i].style.display = '';
+        }
+        showPage();
+
+        preLink();
+        nextText();
+        firstLink();
+    }
+
+    function hideTable() {
+        for (var i = 0; i < numberRowsInTable; i++) {
+            theTable.rows[i].style.display = 'none';
+        }
+    }
+
+    function showPage() {
+        pageNum.innerHTML = page;
+        pageNumt.innerHTML = page;
+    }
+
+    //总共页数
+    function pageCount() {
+        var count = 0;
+        if (numberRowsInTable % pageSize != 0) count = 1;
+        return parseInt(numberRowsInTable / pageSize) + count;
+    }
+
+    //显示链接
+    function preLink() {
+        spanPre.innerHTML = "<a href='javascript:pre();'>上一页</a>";
+        spanPret.innerHTML = "<a href='javascript:pre();'>上一页</a>";
+    }
+
+    function preText() {
+        spanPre.innerHTML = "上一页";
+        spanPret.innerHTML = "上一页";
+    }
+
+    function nextLink() {
+        spanNext.innerHTML = "<a href='javascript:next();'>下一页</a>";
+        spanNextt.innerHTML = "<a href='javascript:next();'>下一页</a>";
+    }
+
+    function nextText() {
+        spanNext.innerHTML = "下一页";
+        spanNextt.innerHTML = "下一页";
+    }
+
+    function firstLink() {
+        spanFirst.innerHTML = "<a href='javascript:first();'>第一页</a>";
+        spanFirstt.innerHTML = "<a href='javascript:first();'>第一页</a>";
+    }
+
+    function firstText() {
+        spanFirst.innerHTML = "第一页";
+        spanFirstt.innerHTML = "第一页";
+    }
+
+    function lastLink() {
+        spanLast.innerHTML = "<a href='javascript:last();'>最后一页</a>";
+        spanLastt.innerHTML = "<a href='javascript:last();'>最后一页</a>";
+    }
+
+    function lastText() {
+        spanLast.innerHTML = "最后一页";
+        spanLastt.innerHTML = "最后一页";
+    }
+
+    //隐藏表格
+    function hide() {
+        for (var i = pageSize; i < numberRowsInTable; i++) {
+            theTable.rows[i].style.display = 'none';
+        }
+
+        totalPage.innerHTML = pageCount();
+        pageNum.innerHTML = '1';
+
+        totalPaget.innerHTML = pageCount();
+        pageNumt.innerHTML = '1';
+
+        nextLink();
+        lastLink();
+    }
+
+    hide();
+</script>

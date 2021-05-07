@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="{% static 'css/layui.css' %}" media="all" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/a.css' %}" media="all" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/login.css' %}" media="all" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<div style="display: none">
+    <span id="spanFirstt">第一页</span> <span id="spanPret">上一页</span> <span id="spanNextt">下一页</span> <span
+        id="spanLastt">最后一页</span> 第<span id="spanPageNumt"></span>页/共<span id="spanTotalPaget"></span>页
+</div>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">药品管理系统</div>
+        <ul class="layui-nav layui-bg-cyan">
+            {% if root == "TS"%}
+            <li class="layui-nav-item" style="float: right"><a href="/create">创建用户</a></li>
+            {% endif %}
+            <li class="layui-nav-item" style="float: right"><a href="/logout">退出登录</a>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-shop/?root={{ root }}">药店</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-worker/?root={{ root }}">药监局职工</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-firm/?root={{ root }}">药品生产厂商</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-pharmacist/?root={{ root }}">药师</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-medicine/?root={{ root }}">药品</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="layui-body">
+        <h1>添加药店</h1><br>
+        <form action="/add-shop/" class="layui-form" lay-filter="example" method="POST">
+            <div class="layui-form-item">
+                <label class="layui-form-label">药店编号</label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shopcode" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">药店名 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shopname" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">类型 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shoptype" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">地区 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shopregion" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">地址 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shopadress" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">面积 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shoparea" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">纬度 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shoplat" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">经度 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shoplng" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">营业面积 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Doarea" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">仓库面积 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Housearea" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">联系电话 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Shopphone" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">管理的药监局职工工号 </label>
+                <div class="layui-input-block">
+                    <input autocomplete="off" class="layui-input" name="Wcode" style="width:300px;" type="text">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label style="display:none"><input name="root2" type="text" value="{{ root }}"></label>
+                <input type="submit" value="提交" class="search">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

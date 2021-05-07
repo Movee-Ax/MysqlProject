@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="{% static 'css/layui.css' %}" media="all" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/a.css' %}" media="all" rel="stylesheet" type="text/css">
+    <title>Title</title>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">药品管理系统</div>
+        <ul class="layui-nav layui-bg-cyan">
+            {% if root == "TS"%}
+            <li class="layui-nav-item" style="float: right"><a href="/create">创建用户</a></li>
+            {% endif %}
+            <li class="layui-nav-item" style="float: right"><a href="/logout">退出登录</a>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-shop/?root={{ root }}">药店</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-worker/?root={{ root }}">药监局职工</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-firm/?root={{ root }}">药品生产厂商</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-pharmacist/?root={{ root }}">药师</a></li>
+                <li class="layui-nav-item layui-nav-itemed"><a class="layui-nav-item"
+                                                               href="/show-medicine/?root={{ root }}">药品</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

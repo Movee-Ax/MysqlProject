@@ -1,0 +1,1442 @@
+2021-05-04 18:06:04,920 - Watching for file changes with StatReloader
+2021-05-04 18:06:20,024 - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\views.py", line 60, in register
+    sqlUse.modify('insert into userList values(%s,%s,%s)', [username, password, root, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'Password' at row 1")
+2021-05-04 18:08:53,019 - Watching for file changes with StatReloader
+2021-05-04 18:08:56,501 - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\views.py", line 60, in register
+    sqlUse.modify('insert into userList values(%s,%s,%s)', [username, password, root, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'Password' at row 1")
+2021-05-04 18:09:42,209 - Watching for file changes with StatReloader
+2021-05-04 18:10:20,611 - Not Found: /login/
+2021-05-04 18:11:18,035 - F:\数据库\管理系统\mysite\mysite\urls.py changed, reloading.
+2021-05-04 18:11:19,522 - Watching for file changes with StatReloader
+2021-05-04 18:13:39,046 - F:\数据库\管理系统\mysite\app\views.py changed, reloading.
+2021-05-04 18:13:40,516 - Watching for file changes with StatReloader
+2021-05-04 18:13:43,251 - F:\数据库\管理系统\mysite\app\views.py changed, reloading.
+2021-05-04 18:13:44,717 - Watching for file changes with StatReloader
+2021-05-04 19:00:47,753 - Watching for file changes with StatReloader
+2021-05-04 19:01:02,354 - Watching for file changes with StatReloader
+2021-05-04 19:03:48,672 - F:\数据库\管理系统\mysite\app\views.py changed, reloading.
+2021-05-04 19:03:50,067 - Watching for file changes with StatReloader
+2021-05-04 19:05:48,836 - F:\数据库\管理系统\mysite\app\views.py changed, reloading.
+2021-05-04 19:05:50,266 - Watching for file changes with StatReloader
+2021-05-04 19:38:27,132 - Watching for file changes with StatReloader
+2021-05-04 19:39:29,420 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 19:39:30,893 - Watching for file changes with StatReloader
+2021-05-04 19:41:58,006 - Watching for file changes with StatReloader
+2021-05-04 19:42:55,792 - Watching for file changes with StatReloader
+2021-05-04 19:42:58,691 - Not Found: /show-worker/Paging.js
+2021-05-04 19:42:59,340 - Not Found: /show-worker/Paging.js
+2021-05-04 19:43:39,687 - Watching for file changes with StatReloader
+2021-05-04 19:58:05,659 - Watching for file changes with StatReloader
+2021-05-04 19:58:19,697 - Not Found: /favicon.ico
+2021-05-04 19:59:03,322 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 19:59:05,574 - Watching for file changes with StatReloader
+2021-05-04 19:59:50,665 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 19:59:51,913 - Watching for file changes with StatReloader
+2021-05-04 20:06:41,219 - Watching for file changes with StatReloader
+2021-05-04 20:06:53,651 - Internal Server Error: /show-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 18, in showWorker
+    return render(request, 'showWorker.html', {'worker_list': worker_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 330: invalid continuation byte
+2021-05-04 20:07:42,926 - Watching for file changes with StatReloader
+2021-05-04 20:07:46,538 - Internal Server Error: /show-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 18, in showWorker
+    return render(request, 'showWorker.html', {'worker_list': worker_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 111: invalid continuation byte
+2021-05-04 20:08:53,353 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 20:08:57,158 - Watching for file changes with StatReloader
+2021-05-04 20:08:59,080 - Internal Server Error: /show-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 18, in showWorker
+    return render(request, 'showWorker.html', {'worker_list': worker_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 111: invalid continuation byte
+2021-05-04 20:09:03,298 - Internal Server Error: /show-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 18, in showWorker
+    return render(request, 'showWorker.html', {'worker_list': worker_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 111: invalid continuation byte
+2021-05-04 20:09:11,332 - Internal Server Error: /show-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 18, in showWorker
+    return render(request, 'showWorker.html', {'worker_list': worker_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 111: invalid continuation byte
+2021-05-04 20:10:14,896 - F:\数据库\管理系统\mysite\template\showShop.html changed, reloading.
+2021-05-04 20:10:16,267 - Watching for file changes with StatReloader
+2021-05-04 20:10:18,348 - Not Found: /show-shop/Paging.js
+2021-05-04 20:10:36,947 - F:\数据库\管理系统\mysite\template\showShop.html changed, reloading.
+2021-05-04 20:10:38,168 - Watching for file changes with StatReloader
+2021-05-04 20:10:40,162 - Not Found: /show-shop/Paging.js
+2021-05-04 20:10:41,125 - Not Found: /show-shop/Paging.js
+2021-05-04 20:11:04,009 - F:\数据库\管理系统\mysite\template\showShop.html changed, reloading.
+2021-05-04 20:11:05,225 - Watching for file changes with StatReloader
+2021-05-04 20:11:09,405 - Not Found: /show-shop/Paging.js
+2021-05-04 20:11:21,580 - F:\数据库\管理系统\mysite\template\showShop.html changed, reloading.
+2021-05-04 20:11:22,813 - Watching for file changes with StatReloader
+2021-05-04 20:11:24,733 - Internal Server Error: /show-shop/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\shop.py", line 18, in showShop
+    return render(request, 'showShop.html', {'shop_list': shop_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 224: invalid continuation byte
+2021-05-04 20:11:33,871 - F:\数据库\管理系统\mysite\template\showShop.html changed, reloading.
+2021-05-04 20:11:35,258 - Watching for file changes with StatReloader
+2021-05-04 20:11:55,978 - Internal Server Error: /show-shop/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\shop.py", line 18, in showShop
+    return render(request, 'showShop.html', {'shop_list': shop_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 148: invalid continuation byte
+2021-05-04 20:12:13,821 - F:\数据库\管理系统\mysite\template\showShop.html changed, reloading.
+2021-05-04 20:12:15,033 - Watching for file changes with StatReloader
+2021-05-04 20:12:18,031 - Internal Server Error: /show-shop/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\shop.py", line 18, in showShop
+    return render(request, 'showShop.html', {'shop_list': shop_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 111: invalid continuation byte
+2021-05-04 20:12:19,924 - Internal Server Error: /show-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 18, in showWorker
+    return render(request, 'showWorker.html', {'worker_list': worker_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 111: invalid continuation byte
+2021-05-04 20:12:26,088 - F:\数据库\管理系统\mysite\template\showShop.html changed, reloading.
+2021-05-04 20:12:27,320 - Watching for file changes with StatReloader
+2021-05-04 20:12:29,344 - Internal Server Error: /show-shop/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\shop.py", line 18, in showShop
+    return render(request, 'showShop.html', {'shop_list': shop_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 111: invalid continuation byte
+2021-05-04 20:12:49,747 - Watching for file changes with StatReloader
+2021-05-04 20:12:53,103 - Internal Server Error: /show-shop/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\shop.py", line 18, in showShop
+    return render(request, 'showShop.html', {'shop_list': shop_list, 'root': root})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 24, in get_template
+    contents = self.get_contents(origin)
+  File "D:\python\lib\site-packages\django\template\loaders\filesystem.py", line 24, in get_contents
+    return fp.read()
+  File "D:\python\lib\codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 111: invalid continuation byte
+2021-05-04 20:14:07,405 - F:\数据库\管理系统\mysite\template\showShop.html changed, reloading.
+2021-05-04 20:14:08,657 - Watching for file changes with StatReloader
+2021-05-04 20:14:21,833 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 20:14:23,165 - Watching for file changes with StatReloader
+2021-05-04 20:14:33,053 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 20:14:34,351 - Watching for file changes with StatReloader
+2021-05-04 20:14:36,024 - Not Found: /show-worker/Paging.js
+2021-05-04 20:15:08,679 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 20:15:09,903 - Watching for file changes with StatReloader
+2021-05-04 20:15:12,283 - Not Found: /show-worker/Paging.js
+2021-05-04 20:16:59,693 - Watching for file changes with StatReloader
+2021-05-04 20:17:02,287 - Not Found: /show-worker/Paging.js
+2021-05-04 20:17:02,990 - Not Found: /show-worker/Paging.js
+2021-05-04 20:17:03,584 - Not Found: /show-worker/Paging.js
+2021-05-04 20:19:18,912 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-04 20:19:20,230 - Watching for file changes with StatReloader
+2021-05-04 20:19:52,283 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 20:19:53,529 - Watching for file changes with StatReloader
+2021-05-04 20:21:01,627 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-04 20:21:02,870 - Watching for file changes with StatReloader
+2021-05-04 20:21:12,722 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-04 20:21:14,026 - Watching for file changes with StatReloader
+2021-05-04 20:23:08,457 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 20:23:09,687 - Watching for file changes with StatReloader
+2021-05-04 20:23:58,525 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-04 20:23:59,773 - Watching for file changes with StatReloader
+2021-05-04 20:24:06,498 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-04 20:24:07,746 - Watching for file changes with StatReloader
+2021-05-04 20:25:08,354 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-04 20:25:09,636 - Watching for file changes with StatReloader
+2021-05-04 20:25:20,535 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-04 20:25:21,848 - Watching for file changes with StatReloader
+2021-05-04 20:27:08,797 - Watching for file changes with StatReloader
+2021-05-04 20:28:27,618 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-04 20:28:28,828 - Watching for file changes with StatReloader
+2021-05-04 20:31:15,213 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:31:16,445 - Watching for file changes with StatReloader
+2021-05-04 20:32:18,106 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:32:19,331 - Watching for file changes with StatReloader
+2021-05-04 20:34:27,677 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:34:28,898 - Watching for file changes with StatReloader
+2021-05-04 20:35:00,120 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:35:01,357 - Watching for file changes with StatReloader
+2021-05-04 20:36:15,661 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:36:16,886 - Watching for file changes with StatReloader
+2021-05-04 20:36:48,008 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:36:49,255 - Watching for file changes with StatReloader
+2021-05-04 20:38:19,564 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:38:21,227 - Watching for file changes with StatReloader
+2021-05-04 20:39:39,165 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:39:40,417 - Watching for file changes with StatReloader
+2021-05-04 20:40:12,333 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:40:13,604 - Watching for file changes with StatReloader
+2021-05-04 20:43:20,387 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:43:21,620 - Watching for file changes with StatReloader
+2021-05-04 20:43:27,384 - Watching for file changes with StatReloader
+2021-05-04 20:43:30,871 - Not Found: /show-firm/static/1.css
+2021-05-04 20:43:31,893 - Not Found: /show-firm/static/1.css
+2021-05-04 20:43:42,680 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:43:43,919 - Watching for file changes with StatReloader
+2021-05-04 20:44:57,193 - F:\数据库\管理系统\mysite\mysite\settings.py changed, reloading.
+2021-05-04 20:44:58,414 - Watching for file changes with StatReloader
+2021-05-04 20:45:06,321 - Watching for file changes with StatReloader
+2021-05-04 20:45:15,939 - Watching for file changes with StatReloader
+2021-05-04 20:46:20,633 - F:\数据库\管理系统\mysite\mysite\settings.py changed, reloading.
+2021-05-04 20:46:21,895 - Watching for file changes with StatReloader
+2021-05-04 20:46:26,467 - Not Found: /show-firm/static/1.css
+2021-05-04 20:46:27,221 - Not Found: /show-firm/static/1.css
+2021-05-04 20:46:58,440 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:46:59,722 - Watching for file changes with StatReloader
+2021-05-04 20:47:36,494 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:47:37,739 - Watching for file changes with StatReloader
+2021-05-04 20:48:20,662 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:48:21,940 - Watching for file changes with StatReloader
+2021-05-04 20:48:42,486 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:48:43,721 - Watching for file changes with StatReloader
+2021-05-04 20:49:05,477 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:49:06,712 - Watching for file changes with StatReloader
+2021-05-04 20:49:35,772 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:49:37,090 - Watching for file changes with StatReloader
+2021-05-04 20:49:42,206 - Not Found: /show-firm/static/1.css
+2021-05-04 20:49:45,306 - Not Found: /show-firm/static/1.css
+2021-05-04 20:51:11,975 - F:\数据库\管理系统\mysite\template\static changed, reloading.
+2021-05-04 20:51:13,242 - Watching for file changes with StatReloader
+2021-05-04 20:51:38,994 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:51:40,303 - Watching for file changes with StatReloader
+2021-05-04 20:51:48,991 - Not Found: /show-firm/static/a.css
+2021-05-04 20:51:49,738 - Not Found: /show-firm/static/a.css
+2021-05-04 20:52:06,492 - Not Found: /show-firm/static/a.css
+2021-05-04 20:53:02,987 - Watching for file changes with StatReloader
+2021-05-04 20:53:23,699 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:53:24,980 - Watching for file changes with StatReloader
+2021-05-04 20:54:55,043 - Watching for file changes with StatReloader
+2021-05-04 20:57:05,624 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:57:06,934 - Watching for file changes with StatReloader
+2021-05-04 20:57:30,685 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:57:31,921 - Watching for file changes with StatReloader
+2021-05-04 20:57:44,075 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 20:57:45,416 - Watching for file changes with StatReloader
+2021-05-04 21:00:10,917 - Watching for file changes with StatReloader
+2021-05-04 21:01:12,870 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:01:14,126 - Watching for file changes with StatReloader
+2021-05-04 21:01:28,423 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:01:29,729 - Watching for file changes with StatReloader
+2021-05-04 21:01:56,713 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:01:57,997 - Watching for file changes with StatReloader
+2021-05-04 21:02:21,576 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:02:22,853 - Watching for file changes with StatReloader
+2021-05-04 21:03:39,356 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:03:40,632 - Watching for file changes with StatReloader
+2021-05-04 21:04:04,347 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:04:05,626 - Watching for file changes with StatReloader
+2021-05-04 21:04:12,329 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:04:13,581 - Watching for file changes with StatReloader
+2021-05-04 21:08:38,904 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:08:40,161 - Watching for file changes with StatReloader
+2021-05-04 21:09:21,913 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:09:23,159 - Watching for file changes with StatReloader
+2021-05-04 21:09:56,491 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:09:57,747 - Watching for file changes with StatReloader
+2021-05-04 21:12:11,714 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:12:12,971 - Watching for file changes with StatReloader
+2021-05-04 21:23:06,615 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:23:07,991 - Watching for file changes with StatReloader
+2021-05-04 21:25:07,661 - Watching for file changes with StatReloader
+2021-05-04 21:27:23,829 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:27:25,200 - Watching for file changes with StatReloader
+2021-05-04 21:27:44,623 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:27:45,846 - Watching for file changes with StatReloader
+2021-05-04 21:28:09,558 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:28:10,885 - Watching for file changes with StatReloader
+2021-05-04 21:28:45,361 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:28:46,711 - Watching for file changes with StatReloader
+2021-05-04 21:29:02,932 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:29:04,185 - Watching for file changes with StatReloader
+2021-05-04 21:29:57,508 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:29:58,763 - Watching for file changes with StatReloader
+2021-05-04 21:30:05,438 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:30:06,799 - Watching for file changes with StatReloader
+2021-05-04 21:30:52,621 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:30:53,854 - Watching for file changes with StatReloader
+2021-05-04 21:35:14,269 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:35:15,513 - Watching for file changes with StatReloader
+2021-05-04 21:35:17,128 - Not Found: /
+2021-05-04 21:35:25,253 - Watching for file changes with StatReloader
+2021-05-04 21:35:59,579 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:36:00,873 - Watching for file changes with StatReloader
+2021-05-04 21:36:12,953 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:36:14,385 - Watching for file changes with StatReloader
+2021-05-04 21:36:21,094 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:36:22,431 - Watching for file changes with StatReloader
+2021-05-04 21:36:43,966 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:36:45,194 - Watching for file changes with StatReloader
+2021-05-04 21:40:33,263 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:40:34,597 - Watching for file changes with StatReloader
+2021-05-04 21:42:05,799 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-04 21:42:07,046 - Watching for file changes with StatReloader
+2021-05-05 11:05:18,934 - Watching for file changes with StatReloader
+2021-05-05 11:05:27,291 - Not Found: /favicon.ico
+2021-05-05 11:05:31,306 - Not Found: /show-firm/static/layui.css
+2021-05-05 11:08:48,325 - Watching for file changes with StatReloader
+2021-05-05 11:08:52,021 - Not Found: /show-firm/static/layui.css
+2021-05-05 11:09:00,462 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:09:01,680 - Watching for file changes with StatReloader
+2021-05-05 11:09:15,977 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:09:17,233 - Watching for file changes with StatReloader
+2021-05-05 11:10:24,390 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:10:25,671 - Watching for file changes with StatReloader
+2021-05-05 11:11:50,850 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:11:52,084 - Watching for file changes with StatReloader
+2021-05-05 11:12:58,234 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:12:59,490 - Watching for file changes with StatReloader
+2021-05-05 11:13:06,181 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:13:07,442 - Watching for file changes with StatReloader
+2021-05-05 11:13:25,798 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:13:27,031 - Watching for file changes with StatReloader
+2021-05-05 11:13:45,445 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:13:46,670 - Watching for file changes with StatReloader
+2021-05-05 11:14:42,243 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:14:43,596 - Watching for file changes with StatReloader
+2021-05-05 11:15:03,032 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:15:04,399 - Watching for file changes with StatReloader
+2021-05-05 11:15:21,703 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:15:22,980 - Watching for file changes with StatReloader
+2021-05-05 11:16:32,331 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:16:33,569 - Watching for file changes with StatReloader
+2021-05-05 11:18:06,192 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-05 11:18:07,455 - Watching for file changes with StatReloader
+2021-05-05 11:18:35,304 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:18:36,612 - Watching for file changes with StatReloader
+2021-05-05 11:20:54,872 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:20:56,162 - Watching for file changes with StatReloader
+2021-05-05 11:21:48,322 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-05 11:21:49,632 - Watching for file changes with StatReloader
+2021-05-05 11:27:43,348 - Watching for file changes with StatReloader
+2021-05-05 11:27:58,712 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 11:27:59,943 - Watching for file changes with StatReloader
+2021-05-05 11:28:22,644 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-05 11:28:23,859 - Watching for file changes with StatReloader
+2021-05-05 11:28:43,391 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-05 11:28:44,630 - Watching for file changes with StatReloader
+2021-05-05 11:28:52,568 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-05 11:28:53,793 - Watching for file changes with StatReloader
+2021-05-05 11:29:12,270 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-05 11:29:13,529 - Watching for file changes with StatReloader
+2021-05-05 12:00:07,860 - Watching for file changes with StatReloader
+2021-05-05 12:03:04,950 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-05 12:03:06,215 - Watching for file changes with StatReloader
+2021-05-05 12:04:19,665 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-05 12:04:20,900 - Watching for file changes with StatReloader
+2021-05-05 12:04:51,077 - F:\数据库\管理系统\mysite\template\showShop.html changed, reloading.
+2021-05-05 12:04:52,327 - Watching for file changes with StatReloader
+2021-05-05 12:06:53,506 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 12:06:54,748 - Watching for file changes with StatReloader
+2021-05-05 16:41:24,882 - Watching for file changes with StatReloader
+2021-05-05 16:42:16,771 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 16:42:18,069 - Watching for file changes with StatReloader
+2021-05-05 16:42:50,144 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 16:42:51,434 - Watching for file changes with StatReloader
+2021-05-05 16:44:09,192 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 16:44:10,464 - Watching for file changes with StatReloader
+2021-05-05 16:44:49,110 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 16:44:50,408 - Watching for file changes with StatReloader
+2021-05-05 16:45:22,577 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 16:45:23,863 - Watching for file changes with StatReloader
+2021-05-05 16:47:03,916 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 16:47:05,207 - Watching for file changes with StatReloader
+2021-05-05 16:48:42,031 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 16:48:43,293 - Watching for file changes with StatReloader
+2021-05-05 16:49:41,766 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-05 16:49:43,085 - Watching for file changes with StatReloader
+2021-05-05 16:51:29,451 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-05 16:51:30,702 - Watching for file changes with StatReloader
+2021-05-05 16:52:51,550 - F:\数据库\管理系统\mysite\template\index.html changed, reloading.
+2021-05-05 16:52:52,821 - Watching for file changes with StatReloader
+2021-05-05 16:54:46,615 - F:\数据库\管理系统\mysite\template\index.html changed, reloading.
+2021-05-05 16:54:47,887 - Watching for file changes with StatReloader
+2021-05-05 16:59:53,216 - F:\数据库\管理系统\mysite\template\index.html changed, reloading.
+2021-05-05 16:59:54,497 - Watching for file changes with StatReloader
+2021-05-05 17:01:21,937 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-05 17:01:23,166 - Watching for file changes with StatReloader
+2021-05-05 17:08:00,132 - F:\数据库\管理系统\mysite\template\addFirm.html changed, reloading.
+2021-05-05 17:08:01,428 - Watching for file changes with StatReloader
+2021-05-05 17:08:52,633 - F:\数据库\管理系统\mysite\template\addWorker.html changed, reloading.
+2021-05-05 17:08:53,916 - Watching for file changes with StatReloader
+2021-05-05 17:08:57,452 - F:\数据库\管理系统\mysite\template\addWorker.html changed, reloading.
+2021-05-05 17:08:58,693 - Watching for file changes with StatReloader
+2021-05-05 17:18:45,282 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:18:46,598 - Watching for file changes with StatReloader
+2021-05-05 17:20:08,554 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:20:09,791 - Watching for file changes with StatReloader
+2021-05-05 17:20:16,485 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:20:17,712 - Watching for file changes with StatReloader
+2021-05-05 17:20:23,370 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:20:24,622 - Watching for file changes with StatReloader
+2021-05-05 17:20:35,566 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:20:36,824 - Watching for file changes with StatReloader
+2021-05-05 17:20:45,646 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:20:46,895 - Watching for file changes with StatReloader
+2021-05-05 17:20:50,417 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:20:51,655 - Watching for file changes with StatReloader
+2021-05-05 17:21:03,572 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:21:04,821 - Watching for file changes with StatReloader
+2021-05-05 17:21:44,209 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:21:45,504 - Watching for file changes with StatReloader
+2021-05-05 17:21:56,460 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:21:57,851 - Watching for file changes with StatReloader
+2021-05-05 17:23:13,640 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:23:15,004 - Watching for file changes with StatReloader
+2021-05-05 17:24:00,946 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:24:02,196 - Watching for file changes with StatReloader
+2021-05-05 17:24:09,944 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:24:11,212 - Watching for file changes with StatReloader
+2021-05-05 17:24:28,666 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:24:29,926 - Watching for file changes with StatReloader
+2021-05-05 17:25:42,264 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:25:43,577 - Watching for file changes with StatReloader
+2021-05-05 17:25:49,249 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:25:50,489 - Watching for file changes with StatReloader
+2021-05-05 17:26:53,463 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:26:54,705 - Watching for file changes with StatReloader
+2021-05-05 17:27:04,767 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:27:06,065 - Watching for file changes with StatReloader
+2021-05-05 17:27:11,748 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:27:13,031 - Watching for file changes with StatReloader
+2021-05-05 17:27:20,934 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:27:22,249 - Watching for file changes with StatReloader
+2021-05-05 17:32:38,052 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:32:39,302 - Watching for file changes with StatReloader
+2021-05-05 17:33:03,115 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:33:04,373 - Watching for file changes with StatReloader
+2021-05-05 17:33:48,191 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:33:49,442 - Watching for file changes with StatReloader
+2021-05-05 17:36:44,597 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 17:36:45,914 - Watching for file changes with StatReloader
+2021-05-05 17:39:21,691 - F:\数据库\管理系统\mysite\template\addFirm.html changed, reloading.
+2021-05-05 17:39:22,996 - Watching for file changes with StatReloader
+2021-05-05 17:41:12,157 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:41:13,401 - Watching for file changes with StatReloader
+2021-05-05 17:41:38,117 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:41:39,388 - Watching for file changes with StatReloader
+2021-05-05 17:41:58,796 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:42:00,046 - Watching for file changes with StatReloader
+2021-05-05 17:42:25,790 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:42:27,062 - Watching for file changes with StatReloader
+2021-05-05 17:42:36,959 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:42:38,250 - Watching for file changes with StatReloader
+2021-05-05 17:42:47,086 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:42:48,389 - Watching for file changes with StatReloader
+2021-05-05 17:43:05,703 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:43:06,941 - Watching for file changes with StatReloader
+2021-05-05 17:45:34,402 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:45:35,645 - Watching for file changes with StatReloader
+2021-05-05 17:48:39,295 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:48:40,571 - Watching for file changes with StatReloader
+2021-05-05 17:52:20,976 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:52:22,217 - Watching for file changes with StatReloader
+2021-05-05 17:52:35,546 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:52:36,825 - Watching for file changes with StatReloader
+2021-05-05 17:53:02,596 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:53:03,849 - Watching for file changes with StatReloader
+2021-05-05 17:54:49,111 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:54:50,441 - Watching for file changes with StatReloader
+2021-05-05 17:55:52,270 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:55:53,519 - Watching for file changes with StatReloader
+2021-05-05 17:57:36,687 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:57:37,965 - Watching for file changes with StatReloader
+2021-05-05 17:58:21,780 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:58:23,083 - Watching for file changes with StatReloader
+2021-05-05 17:58:59,742 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:59:01,014 - Watching for file changes with StatReloader
+2021-05-05 17:59:12,996 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:59:14,269 - Watching for file changes with StatReloader
+2021-05-05 17:59:39,967 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:59:41,211 - Watching for file changes with StatReloader
+2021-05-05 17:59:57,556 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 17:59:58,819 - Watching for file changes with StatReloader
+2021-05-05 18:01:29,133 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:01:30,463 - Watching for file changes with StatReloader
+2021-05-05 18:01:32,989 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:01:34,299 - Watching for file changes with StatReloader
+2021-05-05 18:02:01,300 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:02:02,597 - Watching for file changes with StatReloader
+2021-05-05 18:02:33,802 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:02:35,066 - Watching for file changes with StatReloader
+2021-05-05 18:04:20,443 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:04:21,757 - Watching for file changes with StatReloader
+2021-05-05 18:05:01,324 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:05:02,598 - Watching for file changes with StatReloader
+2021-05-05 18:05:33,664 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:05:34,933 - Watching for file changes with StatReloader
+2021-05-05 18:05:46,009 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:05:47,266 - Watching for file changes with StatReloader
+2021-05-05 18:05:53,955 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:05:55,244 - Watching for file changes with StatReloader
+2021-05-05 18:07:39,347 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:07:40,626 - Watching for file changes with StatReloader
+2021-05-05 18:07:51,737 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:07:53,033 - Watching for file changes with StatReloader
+2021-05-05 18:08:56,752 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:08:58,028 - Watching for file changes with StatReloader
+2021-05-05 18:11:22,560 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:11:23,848 - Watching for file changes with StatReloader
+2021-05-05 18:13:46,895 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:13:48,174 - Watching for file changes with StatReloader
+2021-05-05 18:14:04,552 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:14:05,813 - Watching for file changes with StatReloader
+2021-05-05 18:14:32,788 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:14:34,084 - Watching for file changes with StatReloader
+2021-05-05 18:15:13,738 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:15:15,041 - Watching for file changes with StatReloader
+2021-05-05 18:15:17,580 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:15:18,835 - Watching for file changes with StatReloader
+2021-05-05 18:16:36,810 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 18:16:38,084 - Watching for file changes with StatReloader
+2021-05-05 19:35:30,321 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 19:35:32,405 - Watching for file changes with StatReloader
+2021-05-05 19:41:36,863 - Watching for file changes with StatReloader
+2021-05-05 19:43:31,726 - F:\数据库\管理系统\mysite\template\addMedicine.html changed, reloading.
+2021-05-05 19:43:33,041 - Watching for file changes with StatReloader
+2021-05-05 19:45:38,172 - F:\数据库\管理系统\mysite\template\addMedicine.html changed, reloading.
+2021-05-05 19:45:39,477 - Watching for file changes with StatReloader
+2021-05-05 19:48:51,072 - F:\数据库\管理系统\mysite\template\addMedicine.html changed, reloading.
+2021-05-05 19:48:52,377 - Watching for file changes with StatReloader
+2021-05-05 19:51:03,909 - F:\数据库\管理系统\mysite\template\addMedicine.html changed, reloading.
+2021-05-05 19:51:05,191 - Watching for file changes with StatReloader
+2021-05-05 19:51:39,621 - F:\数据库\管理系统\mysite\template\addMedicine.html changed, reloading.
+2021-05-05 19:51:40,864 - Watching for file changes with StatReloader
+2021-05-05 19:51:56,287 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 98, in editMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Firmcode, Mmoney, Mcount, Cdate, Sdate, Belongsit, Belongcode, Belongnum, Mname, Mlot, Belongcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1292, "Incorrect date value: 'Feb. 1, 2020' for column 'Cdate' at row 1")
+2021-05-05 19:56:07,893 - F:\数据库\管理系统\mysite\template\addWorker.html changed, reloading.
+2021-05-05 19:56:09,181 - Watching for file changes with StatReloader
+2021-05-05 20:05:45,476 - F:\数据库\管理系统\mysite\template\addWorker.html changed, reloading.
+2021-05-05 20:05:46,750 - Watching for file changes with StatReloader
+2021-05-05 20:11:16,131 - F:\数据库\管理系统\mysite\template\addFirm.html changed, reloading.
+2021-05-05 20:11:17,400 - Watching for file changes with StatReloader
+2021-05-05 20:17:44,378 - F:\数据库\管理系统\mysite\template\addShop.html changed, reloading.
+2021-05-05 20:17:45,733 - Watching for file changes with StatReloader
+2021-05-05 20:20:12,254 - F:\数据库\管理系统\mysite\template\editShop.html changed, reloading.
+2021-05-05 20:20:13,535 - Watching for file changes with StatReloader
+2021-05-05 20:23:06,498 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 20:23:07,980 - Watching for file changes with StatReloader
+2021-05-05 20:24:13,049 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 20:24:14,338 - Watching for file changes with StatReloader
+2021-05-05 20:34:46,454 - F:\数据库\管理系统\mysite\template\editFirm.html changed, reloading.
+2021-05-05 20:34:47,876 - Watching for file changes with StatReloader
+2021-05-05 20:36:15,044 - F:\数据库\管理系统\mysite\template\editFirm.html changed, reloading.
+2021-05-05 20:36:16,297 - Watching for file changes with StatReloader
+2021-05-05 20:37:39,159 - F:\数据库\管理系统\mysite\template\editWorker.html changed, reloading.
+2021-05-05 20:37:40,457 - Watching for file changes with StatReloader
+2021-05-05 20:40:42,299 - F:\数据库\管理系统\mysite\template\editWorker.html changed, reloading.
+2021-05-05 20:40:43,562 - Watching for file changes with StatReloader
+2021-05-05 20:43:56,208 - F:\数据库\管理系统\mysite\template\editMedicine.html changed, reloading.
+2021-05-05 20:43:57,452 - Watching for file changes with StatReloader
+2021-05-05 20:44:34,028 - Internal Server Error: /edit-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 75, in editWorker
+    sqlUse.modify(sql, [Wcode, Wname, Wsex, Wage, Wposition, Wcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'Wage' cannot be null")
+2021-05-05 20:45:39,718 - Watching for file changes with StatReloader
+2021-05-05 20:45:44,001 - Internal Server Error: /edit-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 75, in editWorker
+    sqlUse.modify(sql, [Wcode, Wname, Wsex, Wage, Wposition, Wcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'Wage' cannot be null")
+2021-05-05 20:46:17,279 - F:\数据库\管理系统\mysite\template\editWorker.html changed, reloading.
+2021-05-05 20:46:18,545 - Watching for file changes with StatReloader
+2021-05-05 20:46:20,826 - Internal Server Error: /edit-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 75, in editWorker
+    sqlUse.modify(sql, [Wcode, Wname, Wsex, Wage, Wposition, Wcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'Wage' cannot be null")
+2021-05-05 20:46:38,240 - Watching for file changes with StatReloader
+2021-05-05 20:47:39,062 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-05 20:47:40,360 - Watching for file changes with StatReloader
+2021-05-05 20:49:18,002 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-05 20:49:19,373 - Watching for file changes with StatReloader
+2021-05-06 13:14:07,957 - Watching for file changes with StatReloader
+2021-05-06 13:14:14,044 - Not Found: /favicon.ico
+2021-05-06 13:16:05,425 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 13:16:06,688 - Watching for file changes with StatReloader
+2021-05-06 13:19:02,581 - Watching for file changes with StatReloader
+2021-05-06 13:20:59,923 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:21:01,286 - Watching for file changes with StatReloader
+2021-05-06 13:21:11,274 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:21:12,568 - Watching for file changes with StatReloader
+2021-05-06 13:24:09,655 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 13:24:11,006 - Watching for file changes with StatReloader
+2021-05-06 13:27:00,657 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 13:27:01,956 - Watching for file changes with StatReloader
+2021-05-06 13:27:08,501 - Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\views.py", line 89, in logout
+    return render(request, 'login.html', {'logout_succeed': logout_succeed})
+  File "D:\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\python\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\python\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\python\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\python\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\python\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\python\lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'static'. Did you forget to register or load this tag?
+2021-05-06 13:27:52,429 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 13:27:53,719 - Watching for file changes with StatReloader
+2021-05-06 13:31:16,758 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 13:31:18,025 - Watching for file changes with StatReloader
+2021-05-06 13:31:41,792 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 13:31:43,032 - Watching for file changes with StatReloader
+2021-05-06 13:31:49,881 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 13:31:51,156 - Watching for file changes with StatReloader
+2021-05-06 13:33:50,627 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:33:51,957 - Watching for file changes with StatReloader
+2021-05-06 13:34:01,877 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:34:03,189 - Watching for file changes with StatReloader
+2021-05-06 13:34:27,916 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:34:29,279 - Watching for file changes with StatReloader
+2021-05-06 13:34:38,145 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:34:39,414 - Watching for file changes with StatReloader
+2021-05-06 13:35:19,972 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:35:21,276 - Watching for file changes with StatReloader
+2021-05-06 13:35:36,459 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:35:37,735 - Watching for file changes with StatReloader
+2021-05-06 13:35:39,155 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:35:40,456 - Watching for file changes with StatReloader
+2021-05-06 13:35:41,986 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:35:43,315 - Watching for file changes with StatReloader
+2021-05-06 13:35:45,822 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:35:47,210 - Watching for file changes with StatReloader
+2021-05-06 13:35:48,640 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:35:49,952 - Watching for file changes with StatReloader
+2021-05-06 13:36:06,253 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:36:07,609 - Watching for file changes with StatReloader
+2021-05-06 13:36:09,065 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:36:10,409 - Watching for file changes with StatReloader
+2021-05-06 13:36:13,997 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:36:15,337 - Watching for file changes with StatReloader
+2021-05-06 13:36:16,771 - F:\数据库\管理系统\mysite\template\test.html changed, reloading.
+2021-05-06 13:36:18,034 - Watching for file changes with StatReloader
+2021-05-06 16:04:47,174 - Watching for file changes with StatReloader
+2021-05-06 16:05:00,689 - Not Found: /favicon.ico
+2021-05-06 16:07:05,944 - Watching for file changes with StatReloader
+2021-05-06 16:08:35,473 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:08:37,767 - Watching for file changes with StatReloader
+2021-05-06 16:09:58,145 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:10:00,044 - Watching for file changes with StatReloader
+2021-05-06 16:10:24,586 - Watching for file changes with StatReloader
+2021-05-06 16:11:40,346 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:11:42,636 - Watching for file changes with StatReloader
+2021-05-06 16:12:08,567 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:12:10,975 - Watching for file changes with StatReloader
+2021-05-06 16:13:15,792 - Watching for file changes with StatReloader
+2021-05-06 16:17:05,477 - Watching for file changes with StatReloader
+2021-05-06 16:19:28,566 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:19:31,081 - Watching for file changes with StatReloader
+2021-05-06 16:19:53,002 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:19:55,227 - Watching for file changes with StatReloader
+2021-05-06 16:20:46,921 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:20:49,615 - Watching for file changes with StatReloader
+2021-05-06 16:24:03,629 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:24:05,747 - Watching for file changes with StatReloader
+2021-05-06 16:28:16,854 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 16:28:18,920 - Watching for file changes with StatReloader
+2021-05-06 16:29:50,723 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 16:29:52,785 - Watching for file changes with StatReloader
+2021-05-06 16:31:21,944 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 16:31:24,130 - Watching for file changes with StatReloader
+2021-05-06 16:31:37,902 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 16:31:40,172 - Watching for file changes with StatReloader
+2021-05-06 16:33:20,091 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 16:33:22,801 - Watching for file changes with StatReloader
+2021-05-06 16:34:25,016 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-06 16:34:27,146 - Watching for file changes with StatReloader
+2021-05-06 16:35:26,766 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-06 16:35:28,788 - Watching for file changes with StatReloader
+2021-05-06 16:37:20,539 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 16:37:23,170 - Watching for file changes with StatReloader
+2021-05-06 16:39:20,219 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 16:39:23,524 - Watching for file changes with StatReloader
+2021-05-06 16:39:27,189 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 16:39:30,386 - Watching for file changes with StatReloader
+2021-05-06 16:39:32,283 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 16:39:34,426 - Watching for file changes with StatReloader
+2021-05-06 16:45:25,400 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 16:45:27,909 - Watching for file changes with StatReloader
+2021-05-06 16:55:00,950 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:55:03,826 - Watching for file changes with StatReloader
+2021-05-06 16:56:31,913 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:56:34,626 - Watching for file changes with StatReloader
+2021-05-06 16:56:59,604 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 16:57:02,219 - Watching for file changes with StatReloader
+2021-05-06 17:00:13,359 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 17:00:16,114 - Watching for file changes with StatReloader
+2021-05-06 17:01:13,001 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 17:01:15,131 - Watching for file changes with StatReloader
+2021-05-06 18:30:36,139 - Watching for file changes with StatReloader
+2021-05-06 18:30:44,348 - Not Found: /favicon.ico
+2021-05-06 18:32:00,980 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 18:32:02,271 - Watching for file changes with StatReloader
+2021-05-06 18:33:35,469 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 18:33:36,740 - Watching for file changes with StatReloader
+2021-05-06 18:33:46,573 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 18:33:47,811 - Watching for file changes with StatReloader
+2021-05-06 18:34:15,726 - F:\数据库\管理系统\mysite\template\create.html changed, reloading.
+2021-05-06 18:34:16,998 - Watching for file changes with StatReloader
+2021-05-06 18:36:42,199 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-06 18:36:43,542 - Watching for file changes with StatReloader
+2021-05-06 18:37:27,326 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 18:37:28,563 - Watching for file changes with StatReloader
+2021-05-06 18:39:03,761 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 18:39:05,036 - Watching for file changes with StatReloader
+2021-05-06 18:40:49,753 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 18:40:51,026 - Watching for file changes with StatReloader
+2021-05-06 18:47:07,608 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-06 18:47:08,849 - Watching for file changes with StatReloader
+2021-05-06 18:50:05,386 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 18:50:06,678 - Watching for file changes with StatReloader
+2021-05-06 18:50:27,001 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 18:50:28,237 - Watching for file changes with StatReloader
+2021-05-06 18:51:01,404 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 18:51:02,748 - Watching for file changes with StatReloader
+2021-05-06 18:51:15,727 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 18:51:16,983 - Watching for file changes with StatReloader
+2021-05-06 18:51:28,038 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 18:51:29,319 - Watching for file changes with StatReloader
+2021-05-06 18:53:14,063 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 18:53:15,290 - Watching for file changes with StatReloader
+2021-05-06 18:54:23,165 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 18:54:24,427 - Watching for file changes with StatReloader
+2021-05-06 18:54:27,987 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 18:54:29,270 - Watching for file changes with StatReloader
+2021-05-06 18:54:59,047 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 18:55:00,299 - Watching for file changes with StatReloader
+2021-05-06 18:56:48,458 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 18:56:49,767 - Watching for file changes with StatReloader
+2021-05-06 18:58:26,999 - F:\数据库\管理系统\mysite\template\showPharmacist.html changed, reloading.
+2021-05-06 18:58:28,361 - Watching for file changes with StatReloader
+2021-05-06 19:04:32,378 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:04:33,628 - Watching for file changes with StatReloader
+2021-05-06 19:05:58,131 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:05:59,391 - Watching for file changes with StatReloader
+2021-05-06 19:08:17,093 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:08:18,365 - Watching for file changes with StatReloader
+2021-05-06 19:10:42,072 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:10:43,346 - Watching for file changes with StatReloader
+2021-05-06 19:10:49,030 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:10:50,304 - Watching for file changes with StatReloader
+2021-05-06 19:11:01,237 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:11:02,494 - Watching for file changes with StatReloader
+2021-05-06 19:11:09,223 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:11:10,485 - Watching for file changes with StatReloader
+2021-05-06 19:12:35,264 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:12:36,523 - Watching for file changes with StatReloader
+2021-05-06 19:13:03,805 - Watching for file changes with StatReloader
+2021-05-06 19:13:32,801 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:13:34,056 - Watching for file changes with StatReloader
+2021-05-06 19:13:46,247 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:13:47,558 - Watching for file changes with StatReloader
+2021-05-06 19:14:33,255 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:14:34,484 - Watching for file changes with StatReloader
+2021-05-06 19:15:27,726 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:15:29,009 - Watching for file changes with StatReloader
+2021-05-06 19:15:40,096 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:15:41,368 - Watching for file changes with StatReloader
+2021-05-06 19:15:43,882 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:15:45,150 - Watching for file changes with StatReloader
+2021-05-06 19:16:05,661 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:16:06,933 - Watching for file changes with StatReloader
+2021-05-06 19:16:28,363 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:16:29,643 - Watching for file changes with StatReloader
+2021-05-06 19:16:58,476 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:16:59,767 - Watching for file changes with StatReloader
+2021-05-06 19:17:07,662 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:17:09,043 - Watching for file changes with StatReloader
+2021-05-06 19:17:13,746 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:17:15,092 - Watching for file changes with StatReloader
+2021-05-06 19:18:15,532 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 19:18:16,803 - Watching for file changes with StatReloader
+2021-05-06 19:19:02,738 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 19:19:04,078 - Watching for file changes with StatReloader
+2021-05-06 19:19:07,611 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 19:19:08,909 - Watching for file changes with StatReloader
+2021-05-06 19:19:19,946 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 19:19:21,207 - Watching for file changes with StatReloader
+2021-05-06 19:19:44,966 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 19:19:46,266 - Watching for file changes with StatReloader
+2021-05-06 19:20:06,722 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-06 19:20:07,962 - Watching for file changes with StatReloader
+2021-05-06 19:31:31,719 - Watching for file changes with StatReloader
+2021-05-06 19:41:08,652 - F:\数据库\管理系统\mysite\template\addFirm.html changed, reloading.
+2021-05-06 19:41:09,976 - Watching for file changes with StatReloader
+2021-05-06 19:41:38,976 - F:\数据库\管理系统\mysite\template\addFirm.html changed, reloading.
+2021-05-06 19:41:40,238 - Watching for file changes with StatReloader
+2021-05-06 19:43:10,430 - F:\数据库\管理系统\mysite\template\addPharmacist.html changed, reloading.
+2021-05-06 19:43:11,799 - Watching for file changes with StatReloader
+2021-05-06 19:43:20,922 - Watching for file changes with StatReloader
+2021-05-06 19:48:42,872 - Internal Server Error: /add-shop/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\shop.py", line 65, in addShop
+    sqlUse.modify(sql, [Shopcode, Shopname, Shoptype, Shopregion, Shopadress, Shoparea, Shoplat, Shoplng, Doarea,
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1366, "Incorrect decimal value: '' for column 'Shoplat' at row 1")
+2021-05-06 19:54:08,436 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 19:54:09,697 - Watching for file changes with StatReloader
+2021-05-06 19:54:12,188 - Internal Server Error: /add-shop/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\shop.py", line 65, in addShop
+    sqlUse.modify(sql, [Shopcode, Shopname, Shoptype, Shopregion, Shopadress, Shoparea, Shoplat, Shoplng, Doarea,
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'A05' for key 'shop.PRIMARY'")
+2021-05-06 19:54:21,257 - Internal Server Error: /add-shop/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\shop.py", line 65, in addShop
+    sqlUse.modify(sql, [Shopcode, Shopname, Shoptype, Shopregion, Shopadress, Shoparea, Shoplat, Shoplng, Doarea,
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'A04' for key 'shop.PRIMARY'")
+2021-05-06 19:56:26,731 - F:\数据库\管理系统\mysite\template\showFirm.html changed, reloading.
+2021-05-06 19:56:28,018 - Watching for file changes with StatReloader
+2021-05-06 19:57:39,213 - F:\数据库\管理系统\mysite\template\showWorker.html changed, reloading.
+2021-05-06 19:57:40,524 - Watching for file changes with StatReloader
+2021-05-06 19:58:37,909 - F:\数据库\管理系统\mysite\template\showPharmacist.html changed, reloading.
+2021-05-06 19:58:39,343 - Watching for file changes with StatReloader
+2021-05-06 20:05:24,159 - Internal Server Error: /add-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 50, in addWorker
+    sqlUse.modify(sql, [Wcode, Wname, Wsex, Wage, Wposition, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'Wage' cannot be null")
+2021-05-06 20:05:41,193 - Internal Server Error: /add-worker/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\worker.py", line 50, in addWorker
+    sqlUse.modify(sql, [Wcode, Wname, Wsex, Wage, Wposition, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'Wage' cannot be null")
+2021-05-06 20:05:56,876 - F:\数据库\管理系统\mysite\template\addWorker.html changed, reloading.
+2021-05-06 20:05:58,168 - Watching for file changes with StatReloader
+2021-05-06 20:08:09,362 - F:\数据库\管理系统\mysite\template\addWorker.html changed, reloading.
+2021-05-06 20:08:10,659 - Watching for file changes with StatReloader
+2021-05-06 20:13:07,035 - Internal Server Error: /add-firm/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\firm.py", line 53, in addFirm
+    sqlUse.modify(sql, [Firmcode, Firmname, Firmregion, Firmadress, Firmlat, Firmlng, Firmphone, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '芜湖市' for key 'firm.Firmadress'")
+2021-05-06 20:14:04,478 - Watching for file changes with StatReloader
+2021-05-06 20:19:07,922 - Internal Server Error: /add-pharmacist/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\pharmacist.py", line 62, in addPharmacist
+    sqlUse.modify(sql, [Phcode, Phname, Phsex, Phage, Phtitle, Shopcode, Phphone, Phcor, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1366, "Incorrect integer value: 'A01' for column 'Shopcode' at row 1")
+2021-05-06 20:23:43,595 - Watching for file changes with StatReloader
+2021-05-06 20:32:40,897 - Watching for file changes with StatReloader
+2021-05-06 20:35:52,554 - Watching for file changes with StatReloader
+2021-05-06 20:37:02,636 - F:\数据库\管理系统\mysite\template\editPharmacist.html changed, reloading.
+2021-05-06 20:37:03,894 - Watching for file changes with StatReloader
+2021-05-06 20:46:53,497 - Watching for file changes with StatReloader
+2021-05-06 20:47:34,046 - F:\数据库\管理系统\mysite\template\editFirm.html changed, reloading.
+2021-05-06 20:47:35,320 - Watching for file changes with StatReloader
+2021-05-06 20:48:00,084 - F:\数据库\管理系统\mysite\template\editFirm.html changed, reloading.
+2021-05-06 20:48:01,377 - Watching for file changes with StatReloader
+2021-05-06 20:54:04,609 - F:\数据库\管理系统\mysite\template\addMedicine.html changed, reloading.
+2021-05-06 20:54:05,894 - Watching for file changes with StatReloader
+2021-05-06 20:54:13,664 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 97, in editMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Firmcode, Mmoney, Mcount, Cdate, Sdate, Belongsit, Belongcode, Belongnum, Mname, Mlot, Belongcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1292, "Incorrect date value: 'Feb. 1, 2020' for column 'Cdate' at row 1")
+2021-05-06 20:54:34,135 - Watching for file changes with StatReloader
+2021-05-06 20:57:17,968 - F:\数据库\管理系统\mysite\template\addMedicine.html changed, reloading.
+2021-05-06 20:57:19,233 - Watching for file changes with StatReloader
+2021-05-06 20:57:30,149 - F:\数据库\管理系统\mysite\template\editMedicine.html changed, reloading.
+2021-05-06 20:57:31,403 - Watching for file changes with StatReloader
+2021-05-06 21:04:53,066 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-06 21:04:54,477 - Watching for file changes with StatReloader
+2021-05-06 21:04:56,758 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-06 21:04:58,056 - Watching for file changes with StatReloader
+2021-05-06 21:05:17,422 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-06 21:05:18,704 - Watching for file changes with StatReloader
+2021-05-06 21:05:52,956 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-06 21:05:54,260 - Watching for file changes with StatReloader
+2021-05-06 21:07:37,013 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-06 21:07:38,356 - Watching for file changes with StatReloader
+2021-05-06 21:09:25,258 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-06 21:09:26,569 - Watching for file changes with StatReloader
+2021-05-06 21:10:51,289 - F:\数据库\管理系统\mysite\app\worker.py changed, reloading.
+2021-05-06 21:10:52,550 - Watching for file changes with StatReloader
+2021-05-06 21:11:38,434 - F:\数据库\管理系统\mysite\template\showMedicine.html changed, reloading.
+2021-05-06 21:11:39,679 - Watching for file changes with StatReloader
+2021-05-06 21:12:16,004 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-06 21:12:17,290 - Watching for file changes with StatReloader
+2021-05-06 21:25:06,131 - F:\数据库\管理系统\mysite\app\firm.py changed, reloading.
+2021-05-06 21:25:07,440 - Watching for file changes with StatReloader

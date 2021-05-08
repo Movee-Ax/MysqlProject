@@ -90,6 +90,7 @@
                 <th>性别</th>
                 <th>年龄</th>
                 <th>职位</th>
+                <th>联系方式</th>
             </tr>
             </thead>
             <tbody id="tablelsw">
@@ -100,6 +101,7 @@
                 <td>{{ row.Wsex }}</td>
                 <td>{{ row.Wage }}</td>
                 <td>{{ row.Wposition }}</td>
+                <td>{{ row.Wphone }}</td>
                 {% if root == "TS" or root == "S" or root == "C" %}
                 <td class="layui-btn layui-btn-normal">
                     <a href="/edit-worker/?Wcode={{ row.Wcode }}&root={{ root }}">编辑</a>

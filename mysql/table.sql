@@ -23,6 +23,7 @@ Wname char(10)  not null,                           -- 姓名
 Wsex enum('男','女') not null,                       -- 性别
 Wage int not null,                                  -- 年龄
 Wposition char(16) not null                        -- 职位
+Wphone varchar(15) unique not null, -- 电话
 );
 
 create table Firm   -- 药品生产厂商
@@ -59,11 +60,18 @@ Mcount int unsigned not null,                   -- 生产数量
 Cdate Date,                                 -- 生产日期
 Sdate Date,                                  -- 到期时间
 Belongsit enum('生产厂商','药店','已售出'),          -- 归属情况
-Belongcode varchar(20) not null,                -- 归属者编号
-Belongnum int unsigned not null,                -- 数量详情
-primary key(Mname, Mlot, Belongcode)
+primary key(Mname, Mlot, Firmcode)
 );
 
+create table Belong  -- 归属
+(
+Mname char(60) not null,                        -- 药名
+Mlot varchar(20) not null,                      -- 批号
+Firmcode varchar(20) not null,                  -- 生产厂商编号
+Belongcode varchar(20) not null,                -- 归属者编号
+Belongnum int unsigned not null,                -- 数量详情
+primary key(Mname, Mlot, Firmcode, Belongcode)
+);
 create table Userlist   -- 用户列表
 (
 Username varchar(20) primary key,

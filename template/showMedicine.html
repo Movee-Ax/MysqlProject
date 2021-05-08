@@ -101,12 +101,12 @@
                 <td>{{ row.Belongnum }}</td>
                 {% if root == "TS" or root == "S" or root == "C" %}
                 <td class="layui-btn layui-btn-normal">
-                    <a href="/edit-medicine/?Mname={{ row.Mname }}&Mlot={{ row.Mlot }}&Belongcode={{ row.Belongcode }}&root={{ root }}">编辑</a>
+                    <a href="/edit-medicine/?Mname={{ row.Mname }}&Mlot={{ row.Mlot }}&Firmcode={{ row.Firmcode }}&Belongcode={{ row.Belongcode }}&root={{ root }}">编辑</a>
                 </td>
                 {% endif %}
                 {% if root == "TS" %}
                 <td class="layui-btn layui-btn-danger">
-                    <a href="/delete-medicine/?Mname={{ row.Mname }}&Mlot={{ row.Mlot }}&Belongcode={{ row.Belongcode }}&root={{ root }}"
+                    <a href="/delete-medicine/?Mname={{ row.Mname }}&Mlot={{ row.Mlot }}&Firmcode={{ row.Firmcode }}&Belongcode={{ row.Belongcode }}&root={{ root }}"
                        onclick="return confirm('确定删除?');">删除</a>
                 </td>
                 {% endif %}

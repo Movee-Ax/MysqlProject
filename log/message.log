@@ -1440,3 +1440,355 @@ pymysql.err.OperationalError: (1292, "Incorrect date value: 'Feb. 1, 2020' for c
 2021-05-06 21:12:17,290 - Watching for file changes with StatReloader
 2021-05-06 21:25:06,131 - F:\数据库\管理系统\mysite\app\firm.py changed, reloading.
 2021-05-06 21:25:07,440 - Watching for file changes with StatReloader
+2021-05-08 13:35:10,627 - Watching for file changes with StatReloader
+2021-05-08 13:35:20,760 - Not Found: /
+2021-05-08 13:35:20,770 - Not Found: /
+2021-05-08 13:35:20,942 - Not Found: /favicon.ico
+2021-05-08 13:35:45,933 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 83, in editMedicine
+    current_medicine = sqlUse.get_one(sql2, [Mname, Mlot, Belongcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 31, in get_one
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'Belongcode' in 'where clause'")
+2021-05-08 13:37:21,604 - Watching for file changes with StatReloader
+2021-05-08 13:39:50,675 - Watching for file changes with StatReloader
+2021-05-08 13:39:59,609 - Internal Server Error: /show-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 27, in showMedicine
+    medicine_list = sqlUse.get_list(sql, [c1, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 14, in get_list
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1052, "Column 'Mname' in where clause is ambiguous")
+2021-05-08 13:41:07,045 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-08 13:41:08,290 - Watching for file changes with StatReloader
+2021-05-08 23:00:24,047 - Watching for file changes with StatReloader
+2021-05-08 23:01:41,383 - Watching for file changes with StatReloader
+2021-05-08 23:01:47,873 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 83, in editMedicine
+    current_medicine = sqlUse.get_one(sql2, [Mname, Mlot, Belongcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 31, in get_one
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'Belongcode' in 'where clause'")
+2021-05-08 23:07:41,773 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-08 23:07:43,025 - Watching for file changes with StatReloader
+2021-05-08 23:07:49,453 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 84, in editMedicine
+    current_medicine = sqlUse.get_one(sql2, [Mname, Mlot, Firmcode, Belongcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 31, in get_one
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1052, "Column 'Mname' in where clause is ambiguous")
+2021-05-08 23:09:30,925 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-08 23:09:32,169 - Watching for file changes with StatReloader
+2021-05-08 23:09:45,056 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 100, in editMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Firmcode, Mmoney, Mcount, Cdate, Sdate, Mname, Mlot, Firmcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where Mname='一号药' and Mlot='D03' and Firmcode='B01'' at line 1")
+2021-05-08 23:11:35,298 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 100, in editMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Firmcode, Mmoney, Mcount, Cdate, Sdate, Mname, Mlot, Firmcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where Mname='一号药' and Mlot='D03' and Firmcode='B01'' at line 1")
+2021-05-08 23:11:42,132 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 100, in editMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Firmcode, Mmoney, Mcount, Cdate, Sdate, Mname, Mlot, Firmcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where Mname='一号药' and Mlot='D03' and Firmcode='B01'' at line 1")
+2021-05-08 23:16:25,177 - Watching for file changes with StatReloader
+2021-05-08 23:17:26,115 - Internal Server Error: /add-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 66, in addMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Firmcode, Mmoney, Mcount, Cdate, Sdate, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1136, "Column count doesn't match value count at row 1")
+2021-05-08 23:19:35,271 - Watching for file changes with StatReloader
+2021-05-08 23:20:26,092 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-08 23:20:27,336 - Watching for file changes with StatReloader
+2021-05-08 23:21:19,760 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 97, in editMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Firmcode, Mmoney, Mcount, Cdate, Sdate, Mname, Mlot, Firmcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where Mname='七号院' and Mlot='1' and Firmcode='1'' at line 1")
+2021-05-08 23:22:00,483 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-08 23:22:01,840 - Watching for file changes with StatReloader
+2021-05-08 23:22:05,172 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 97, in editMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Firmcode, Mmoney, Mcount, Cdate, Sdate, Mname, Mlot, Firmcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1292, "Incorrect date value: 'Jan. 1, 2020' for column 'Cdate' at row 1")
+2021-05-08 23:22:27,104 - Watching for file changes with StatReloader
+2021-05-08 23:22:45,412 - Internal Server Error: /edit-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 97, in editMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Firmcode, Mmoney, Mcount, Cdate, Sdate, Mname, Mlot, Firmcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1292, "Incorrect date value: 'Jan. 1, 2020' for column 'Cdate' at row 1")
+2021-05-08 23:22:51,316 - Internal Server Error: /delete-medicine/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\数据库\管理系统\mysite\app\medicine.py", line 111, in deleteMedicine
+    sqlUse.modify(sql, [Mname, Mlot, Belongcode, ])
+  File "F:\数据库\管理系统\mysite\utils\sqlUse.py", line 48, in modify
+    cursor.execute(sql, args)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\python\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\python\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\python\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'Belongcode' in 'where clause'")
+2021-05-08 23:24:13,804 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-08 23:24:15,056 - Watching for file changes with StatReloader
+2021-05-08 23:27:03,647 - Watching for file changes with StatReloader
+2021-05-08 23:30:11,386 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-08 23:30:12,629 - Watching for file changes with StatReloader
+2021-05-08 23:30:43,662 - F:\数据库\管理系统\mysite\app\medicine.py changed, reloading.
+2021-05-08 23:30:44,975 - Watching for file changes with StatReloader

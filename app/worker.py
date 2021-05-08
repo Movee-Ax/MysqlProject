@@ -47,8 +47,9 @@ def addWorker(request):
         Wsex = request.POST.get('Wsex')
         Wage = request.POST.get('Wage')
         Wposition = request.POST.get('Wposition')
-        sql = 'insert into worker values(%s,%s,%s,%s,%s);'
-        sqlUse.modify(sql, [Wcode, Wname, Wsex, Wage, Wposition, ])
+        Wphone = request.POST.get('Wphone')
+        sql = 'insert into worker values(%s,%s,%s,%s,%s,%s);'
+        sqlUse.modify(sql, [Wcode, Wname, Wsex, Wage, Wposition, Wphone, ])
         sql = 'select * from worker;'
         worker_list = sqlUse.get_list(sql, [])
         return render(request, 'showWorker.html', {'worker_list': worker_list, 'root': root})
@@ -72,8 +73,9 @@ def editWorker(request):
         Wsex = request.POST.get('Wsex')
         Wage = request.POST.get('Wage')
         Wposition = request.POST.get('Wposition')
-        sql = 'update worker set Wcode=%s, Wname=%s, Wsex=%s, Wage=%s, Wposition=%s where Wcode=%s ;'
-        sqlUse.modify(sql, [Wcode, Wname, Wsex, Wage, Wposition, Wcode, ])
+        Wphone = request.POST.get('Wphone')
+        sql = 'update worker set Wcode=%s, Wname=%s, Wsex=%s, Wage=%s, Wposition=%s, Wphone=%s where Wcode=%s ;'
+        sqlUse.modify(sql, [Wcode, Wname, Wsex, Wage, Wposition, Wphone, Wcode, ])
         sql = 'select * from worker;'
         worker_list = sqlUse.get_list(sql, [])
         return render(request, 'showWorker.html', {'worker_list': worker_list, 'root': root})

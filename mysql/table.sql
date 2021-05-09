@@ -1,5 +1,5 @@
 create database Drugstore DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-
+use Drugstore;
 create table Shop   -- 药店
 (
 Shopcode varchar(20) primary key not null,  -- 药店编号

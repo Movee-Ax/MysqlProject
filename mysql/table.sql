@@ -59,7 +59,6 @@ Mmoney numeric(8,2) not null,                   -- 单价
 Mcount int unsigned not null,                   -- 生产数量
 Cdate Date,                                 -- 生产日期
 Sdate Date,                                  -- 到期时间
-Belongsit enum('生产厂商','药店','已售出'),          -- 归属情况
 primary key(Mname, Mlot, Firmcode)
 );
 

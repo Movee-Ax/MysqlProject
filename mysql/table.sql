@@ -74,7 +74,7 @@ primary key(Mname, Mlot, Firmcode, Belongcode)
 create table Userlist   -- 用户列表
 (
 Username varchar(20) primary key,
-Password varchar(20) not null,
+Password varchar(40) not null,
 root enum('TS','S','C','P')          -- TS可执行所有权限包括创建任何权限的用户，S可执行增改查，C可执行改查，P可执行查
 );
 

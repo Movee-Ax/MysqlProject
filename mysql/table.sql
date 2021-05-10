@@ -22,8 +22,8 @@ Wcode char(20) primary key not null,                -- 工号
 Wname char(10)  not null,                           -- 姓名
 Wsex enum('男','女') not null,                       -- 性别
 Wage int not null,                                  -- 年龄
-Wposition char(16) not null                        -- 职位
-Wphone varchar(15) unique not null, -- 电话
+Wposition char(16) not null,                       -- 职位
+Wphone varchar(15) unique not null -- 电话
 );
 
 create table Firm   -- 药品生产厂商

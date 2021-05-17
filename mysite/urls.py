@@ -26,6 +26,7 @@ from app import pharmacist
 
 
 urlpatterns = [
+    path('', views.home),
     path('manager/', admin.site.urls),
     path('index/', views.index),            # 展示总页面，可以去选择查看什么信息
     path('register/', views.register),       # 注册

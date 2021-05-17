@@ -1819,3 +1819,65 @@ Traceback (most recent call last):
   File "D:\python\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
     raise errorclass(errno, errval)
 pymysql.err.IntegrityError: (1062, "Duplicate entry '七号院-1-1-1' for key 'belong.PRIMARY'")
+2021-05-11 12:37:18,645 - Watching for file changes with StatReloader
+2021-05-11 12:37:19,806 - Not Found: /
+2021-05-11 12:37:19,871 - Not Found: /favicon.ico
+2021-05-11 12:59:01,975 - Watching for file changes with StatReloader
+2021-05-11 12:59:30,407 - Watching for file changes with StatReloader
+2021-05-11 12:59:43,310 - Watching for file changes with StatReloader
+2021-05-11 13:00:01,184 - Watching for file changes with StatReloader
+2021-05-11 13:00:36,346 - Watching for file changes with StatReloader
+2021-05-11 13:00:41,969 - F:\数据库\管理系统\mysite\mysite\urls.py changed, reloading.
+2021-05-11 13:00:43,351 - Watching for file changes with StatReloader
+2021-05-11 13:00:45,474 - Not Found: /favicon.ico
+2021-05-11 13:03:04,066 - Watching for file changes with StatReloader
+2021-05-11 16:39:01,458 - Watching for file changes with StatReloader
+2021-05-11 16:39:05,570 - Not Found: /favicon.ico
+2021-05-17 18:26:12,918 - Watching for file changes with StatReloader
+2021-05-17 18:26:27,426 - Not Found: /favicon.ico
+2021-05-17 18:28:46,518 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-17 18:28:47,919 - Watching for file changes with StatReloader
+2021-05-17 18:29:42,188 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-17 18:29:43,588 - Watching for file changes with StatReloader
+2021-05-17 18:31:01,879 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-17 18:31:03,189 - Watching for file changes with StatReloader
+2021-05-17 18:31:56,188 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-17 18:31:57,458 - Watching for file changes with StatReloader
+2021-05-17 18:33:49,548 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-17 18:33:50,828 - Watching for file changes with StatReloader
+2021-05-17 18:33:59,783 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-17 18:34:01,106 - Watching for file changes with StatReloader
+2021-05-17 18:34:15,373 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-17 18:34:16,680 - Watching for file changes with StatReloader
+2021-05-17 18:34:25,498 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-17 18:34:26,767 - Watching for file changes with StatReloader
+2021-05-17 18:34:47,281 - F:\数据库\管理系统\mysite\template\register.html changed, reloading.
+2021-05-17 18:34:48,562 - Watching for file changes with StatReloader
+2021-05-17 18:35:24,723 - F:\数据库\管理系统\mysite\template\login.html changed, reloading.
+2021-05-17 18:35:25,978 - Watching for file changes with StatReloader
+2021-05-17 18:46:02,318 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:46:03,855 - Watching for file changes with StatReloader
+2021-05-17 18:47:27,286 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:47:28,667 - Watching for file changes with StatReloader
+2021-05-17 18:48:39,802 - Watching for file changes with StatReloader
+2021-05-17 18:48:40,972 - Not Found: /favicon.ico
+2021-05-17 18:49:21,299 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:49:22,578 - Watching for file changes with StatReloader
+2021-05-17 18:49:46,053 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:49:47,306 - Watching for file changes with StatReloader
+2021-05-17 18:51:15,160 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:51:16,439 - Watching for file changes with StatReloader
+2021-05-17 18:52:10,740 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:52:11,987 - Watching for file changes with StatReloader
+2021-05-17 18:52:19,893 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:52:21,172 - Watching for file changes with StatReloader
+2021-05-17 18:52:39,450 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:52:40,758 - Watching for file changes with StatReloader
+2021-05-17 18:53:04,439 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:53:05,708 - Watching for file changes with StatReloader
+2021-05-17 18:53:13,635 - F:\数据库\管理系统\mysite\template\jc.html changed, reloading.
+2021-05-17 18:53:14,921 - Watching for file changes with StatReloader
+2021-05-17 18:54:52,607 - F:\数据库\管理系统\mysite\app\views.py changed, reloading.
+2021-05-17 18:54:53,861 - Watching for file changes with StatReloader
+2021-05-17 18:55:19,647 - F:\数据库\管理系统\mysite\template\Home.html changed, reloading.
+2021-05-17 18:55:20,913 - Watching for file changes with StatReloader

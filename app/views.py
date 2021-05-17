@@ -65,6 +65,10 @@ def register(request):
             return render(request, 'register.html', {'exist_user': exist_user})
 
 
+def home(request):
+    return render(request, 'Home.html')
+
+
 def create(request):
     if request.method == 'GET':
         return render(request, 'create.html')

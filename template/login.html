@@ -5,20 +5,62 @@
     {% load static %}
     <link href="{% static 'css/login.css' %}" media="all" rel="stylesheet" type="text/css">
     <title>登录</title>
+    <script>
+        var flagU = true;
+        var flagP = true;
+        var flagE = true;
+        window.onload = function () {
+            var usernameObj = document.getElementById("username");
+            var passwordObj = document.getElementById("password");
+            var pattU = /^[a-zA-Z0-9_-]{5,15}$/;
+            // 用户名5-15位，只能包含大小写字母、数字和-_两个符号
+            var pattP = /(?![0-9A-Z]+$)(?![0-9a-z]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,18}$/;
+            // 新建用户时需验证用户密码，必须包含数字、大小写字母，且至少六位。
+
+            var tsUObj = document.getElementById("tsU");
+            var tsPObj = document.getElementById("tsP");
+            usernameObj.onblur = function () {
+                if (!pattU.test(usernameObj.value)) {
+                    tsUObj.innerText = "用户名输入不合法";
+                    flagU = false;
+                } else {
+                    flagU = true;
+                    tsUObj.innerText = "";
+                }
+            }
+            passwordObj.onblur = function () {
+                if (!pattP.test(passwordObj.value)) {
+                    tsPObj.innerText = "密码输入不合法";
+                    flagP = false;
+                } else {
+                    tsPObj.innerText = "";
+                    flagP = true;
+                }
+            }
+        }
+        function submitFlag() {
+            if(!(flagU && flagP)){
+                alert("用户名或者密码不合法，请修改！")
+            }
+            return (flagU && flagP);
+        }
+    </script>
 </head>
 <body class="bg">
 <div id="bigBox">
     <h1 style="color: #009688">药品管理系统</h1>
     <h2 style="color: white">登录</h2>
     <div class="inputBox">
-        <form action="/login/" method="POST">
+        <form action="/login/" method="POST" onsubmit="return submitFlag()">
             <p style="color:red">{{ logout_succeed }}</p>
             <div class="inputText">
-                <input name="username" placeholder="用户名" type="text">
+                <input name="username" placeholder="用户名(5-15位，只能包含字母、数字和-_)" type="text" id="username" style="width: 250px">
+                <br><span id="tsU" style="color: red"></span>
             </div>
             <div class="inputText">
                 <p style="color:red">{{ not_user }}</p>
-                <input name="password" placeholder="密码" type="password">
+                <input name="password" placeholder="密码(6-18位，必须包含数字、大小写字母)" type="password" id="password" style="width: 250px">
+                <br><span id="tsP" style="color: red"></span>
                 <p style="color:red">{{ not_password }}</p>
                 <p style="color:red">{{ succeed }}</p>
             </div>

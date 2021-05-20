@@ -5,6 +5,8 @@
     <link href="{% static 'css/layui.css' %}" media="all" rel="stylesheet" type="text/css">
     <link href="{% static 'css/a.css' %}" media="all" rel="stylesheet" type="text/css">
     <link href="{% static 'css/login.css' %}" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="{% static 'json/time.js' %}">
+    </script>
     <title>Title</title>
 </head>
 <body>
@@ -16,6 +18,7 @@
     <div class="layui-header">
         <div class="layui-logo">药品管理系统</div>
         <ul class="layui-nav layui-bg-cyan">
+            <li id="show_time" class="layui-nav-item" style="float: right"></li>
             {% if root == "TS"%}
             <li class="layui-nav-item" style="float: right"><a href="/create">创建用户</a></li>
             {% endif %}

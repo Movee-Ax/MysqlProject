@@ -7,7 +7,7 @@ Shopname char(30) not null,     -- 药店名
 Shoptype char(10) not null,     -- 类型
 Shopregion char(10) not null,    -- 地区
 Shopadress char(30) not null,   -- 地址
-Shoparea char(40) not null,     -- 面积
+Shoparea int not null,     -- 面积
 Shoplat numeric(3,1) not null,  -- 纬度
 Shoplng numeric(4,1) not null,  -- 经度
 Doarea int,                     -- 营业面积
